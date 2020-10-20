@@ -1,0 +1,5 @@
+<form method="POST" action="/signin">
+    <p>Name: <%= collection_select(:user, :name, User.all, :name, :name) %></p>
+    <p>Password: <input type="text" name="user[password]" id="user_password"></p>
+    <input type ="text" name="user[password]" id='password'>
+    <input type="submit" value= "Sign In">  
